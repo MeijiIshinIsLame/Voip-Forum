@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: LeagueSpartan-Light;
+  src: url(./fonts/LeagueSpartan-Light.woff);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: LeagueSpartan-Bold;
+  src: url(./fonts/LeagueSpartan-Bold.woff);
+}
+
+body {
+  margin: 40px auto;
+  max-width: 1300px;
+  line-height: 0.8;
+  font-size: 18px;
+  color: #444;
+  background-image: radial-gradient(
+    circle,
+    #cdcdcd,
+    #c1c1c4,
+    #b3b6bb,
+    #a5abb3,
+    #95a1a9
+  );
+  padding: 0 10px;
+}
+
+.bordered {
+  background-color: #cdcdcd;
+  padding: 10px 10px;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 0 8px 6px -2px grey;
+  text-align: center;
+  font-family: LeagueSpartan-Light;
+}
+
+.titletext {
+  font-family: LeagueSpartan-Bold;
+}
+
+.bordered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50%;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 0 8px 6px -2px grey;
+}
+
+.non-bordered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50%;
 }
