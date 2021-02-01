@@ -39,7 +39,7 @@ class App extends Component {
     try {
       var validString,
         errorMsg = this.testMessageinput(theData);
-      let result = await fetch(process.env.POST_URL, {
+      let result = await fetch("http://ec2-54-183-194-101.us-west-1.compute.amazonaws.com/post", {
         method: "post",
         mode: "no-cors",
         headers: {
